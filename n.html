@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Urubuga rwawe rwa Beginners</title>
+<style>
+  /* General Styles */
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121029; /* dark background */
+    color: #ddddee;
+  }
+
+  /* Header */
+  header {
+    background: linear-gradient(90deg, #120e24, #2f2657);
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #c6b5ff;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    color: #ddddee;
+  }
+  nav ul li {
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+  }
+  nav ul li:hover {
+    color: #a083ff;
+  }
+  nav ul li::after {
+    content: "▼";
+    font-size: 10px;
+    margin-left: 6px;
+    color: #a083ff;
+    display: none;
+  }
+  nav ul li.courses::after {
+    display: inline-block;
+  }
+
+  /* Hero Section */
+  .hero {
+    background-color: #5c42f3;
+    text-align: center;
+    padding: 70px 20px;
+  }
+  .hero button {
+    background-color: #7c5cff;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 20px 50px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .hero button:hover {
+    background-color: #9b7eff;
+  }
+
+  /* Footer */
+  footer {
+    background-color: #1a1837;
+    padding: 50px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    color: #ccc;
+  }
+  .footer-section {
+    flex: 1 1 200px;
+    min-width: 200px;
+  }
+  .footer-section h3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ddddee;
+  }
+  .footer-section ul,
+  .footer-section p {
+    margin: 0;
+    padding: 0;
+  }
+  .footer-section ul {
+    list-style: none;
+  }
+  .footer-section ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .footer-section ul li:hover {
+    color: #a083ff;
+  }
+
+  /* New Badge */
+  .new-badge {
+    background-color: #7c5cff;
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 12px;
+    padding: 2px 8px;
+    margin-left: 8px;
+  }
+
+  /* Social Icons container */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    font-size: 22px;
+  }
+  .social-icons svg {
+    fill: #ddddee;
+    cursor: pointer;
+    transition: fill 0.3s ease;
+  }
+  .social-icons svg:hover {
+    fill: #7c5cff;
+  }
+
+  /* Newsletter */
+  .newsletter {
+    background-color: #29284a;
+    padding: 20px 15px;
+    border-radius: 15px;
+    max-width: 350px;
+    color: #bbb;
+  }
+  .newsletter h3 {
+    color: #ddddee;
+    margin-bottom: 15px;
+  }
+  .newsletter input[type="email"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  .newsletter button {
+    background-color: #7c5cff;
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  .newsletter button:hover {
+    background-color: #9b7eff;
+  }
+
+  /* Responsive */
+  @media (max-width: 800px) {
+    footer {
+      flex-direction: column;
+      padding: 30px 20px;
+    }
+    .footer-section {
+      min-width: 100%;
+    }
+    .hero button {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MyAcademy</div>
+  <nav>
+    <ul>
+      <li class="courses">Courses</li>
+      <li>Student Stories</li>
+      <li>Free Resources</li>
+      <li>About</li>
+      <li>Login</li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <button>Get started</button>
+</section>
+
+<footer>
+  <div class="footer-section courses">
+    <h3>Courses</h3>
+    <ul>
+      <li>The Webflow Masterclass <span class="new-badge">NEW</span></li>
+      <li>The Framer Masterclass</li>
+      <li>Figma For Web Designers</li>
+      <li>Web Design Masterclass</li>
+      <li>Brand Design Mastery</li>
+      <li>Core Design Skills</li>
+      <li>Freelancing for Web Designers</li>
+      <li>WriteSite: Strategic Copywriting for Web Designers</li>
+    </ul>
+  </div>
+
+  <div class="footer-section bundle">
+    <h3>Bundle</h3>
+    <p>Web Career Ignite</p>
+  </div>
+
+  <div class="footer-section company">
+    <h3>Company</h3>
+    <ul>
+      <li>About</li>
+      <li>Terms and Conditions</li>
+      <li>Privacy Policy</li>
+      <li>Code Of Conduct</li>
+      <li>Refunds & Cancellation Policy</li>
+    </ul>
+  </div>
+
+  <div class="footer-section resources">
+    <h3>Resources</h3>
+    <p>Blog</p>
+  </div>
+
+  <div class="footer-section social-icons" aria-label="Social media links">
+    <!-- SVG icons simplified as text for example -->
+    <a href="#" aria-label="YouTube" title="YouTube" style="color:#ddddee;">▶️</a>
+    <a href="#" aria-label="Instagram" title="Instagram" style="color:#ddddee;">📸</a>
+    <a href="#" aria-label="TikTok" title="TikTok" style="color:#ddddee;">🎵</a>
+    <a href="#" aria-label="Twitter" title="Twitter" style="color:#ddddee;">🐦</a>
+    <a href="#" aria-label="Podcast" title="Podcast" style="color:#ddddee;">🎙️</a>
+  </div>
+
+  <div class="footer-section newsletter">
+    <h3>Join 150K+ Designers For Weekly Creative Insights</h3>
+    <input type="email" placeholder="Enter your best email" />
+    <button>Sign Up Now</button>
+    <p style="font-size: 11px; margin-top: 10px; color: #888;">
+      We respect your privacy and never use your email for spam. Subscribe with confidence, unsubscribe anytime.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
